@@ -169,7 +169,23 @@ in addition to the decoded opacity transfer function.
 
 ## Pretrained Models
 
-TODO
+We have released models that are trained on the datasets used in our paper. To download a model, from within the top-level project directory run:
+```
+./models/download_model.sh name
+```
+where `name` is the name of the model corresponding to a particular volumetric dataset and illumination:
+* `combustion`: The Combustion dataset rendered without illumination using VTK's volume renderer
+* `combustion_shading`: The Combustion dataset rendered with direct illumination using the OSPRay volume renderer
+* `combustion_osp`: The Combustion dataset rendered with global illumination using the OSPRay volume renderer
+* `engine`: The Engine dataset rendered without illumination using VTK's volume renderer
+* `vmale_osp`: The Jet dataset rendered with global illumination using the OSPRay volume renderer
+* `foot`: The Foot dataset rendered without illumination using VTK's volume renderer
+* `jet`: The Jet dataset rendered without illumination using VTK's volume renderer
+* `spathorynchus_osp`: The Spathorynchus dataset rendered with global illumination using the OSPRay volume renderer
+
+A directory titled `name` will be created within the `models` directory, containing the pytorch network for the translation GAN
+generator as well as a file named `range.npy` that contains the minimum and maximum of the range of the volume dataset. The range is
+used for the above applications of TF Sensitivity and TF Exploration.
 
 ## Datasets
 
