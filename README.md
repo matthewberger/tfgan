@@ -3,6 +3,7 @@
 ![alt text](https://github.com/matthewberger/tfgan/raw/master/images/teaser_img.jpg "Overview")
 
 [Matthew Berger](https://matthewberger.github.io/), Jixian Li, [Joshua A. Levine](https://jalevine.bitbucket.io/)
+
 ([arxiv](https://matthewberger.github.io/)) ([video](https://matthewberger.github.io/))
 
 This is the project webpage for our paper on Volume Rendering using Generative Models. Provided is code to generate training data, train the models,
