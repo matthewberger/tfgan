@@ -189,4 +189,15 @@ used for the above applications of TF Sensitivity and TF Exploration.
 
 ## Datasets
 
-TODO
+We have released the datasets containing all of the images and parameters (viewpoints and TFs) that can be used to train
+models. To download a dataset, from within the top-level directory run:
+```
+./models/download_dataset.sh name
+```
+where `name` refers to the volumetric dataset and illumination used to create the data, as described above in *Pretrained Models*. Each
+dataset consists of the VTK-format volume, a directory for training that contains 200,000 images/parameters, and a directory for
+testing that contains 2,000 images/parameters. If interested in training, it is necessary to point to this directory in
+`dataroot` as described above, likewise for evaluation on the test directory.
+
+Each dataset is quite large, roughly 12-20 GB depending on the data, so be sure that there is sufficient space for both the tarball that
+is downloaded and the resulting data extracted.
