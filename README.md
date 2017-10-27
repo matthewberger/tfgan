@@ -153,9 +153,14 @@ is plotted over the image, showing image regions of sensitivity.
 
 ### TF Exploration
 
-![alt text](https://github.com/matthewberger/tfgan/raw/master/images/explore_foot.jpg "Sensitivity")
+![alt text](https://github.com/matthewberger/tfgan/raw/master/images/explore_foot.jpg "Exploration")
 
-To run TF Exploration, within `renderer`:
+To run TF Exploration, you will first need to compile Barnes-Hut t-SNE within the `renderer/bh_tsne` directory:
+```
+g++ sptree.cpp tsne.cpp -o tsne -O2
+```
+
+Then from `render` run:
 
 ```
 python feature_explorer.py network --range range.npy --cuda
