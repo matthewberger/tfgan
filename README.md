@@ -69,12 +69,12 @@ that predicts the RGB image, using the opacity prediction GAN. Throughout we ass
 To train the opacity GAN, first go to the `gan` directory and run:
 
 ```
-python stage1_train.py --dataroot data_dir --checkpoint_dir checkpoint_dir --name name
+python stage1_gan.py --dataroot data_dir --checkpoint_dir checkpoint_dir --name name
 ```
 
 where `data_dir` is the root-level directory of the generated set of images and inputs, as previously discussed, `checkpoint_dir`
 is the base directory from which checkpoints of the generator and discriminator networks are written, and `name` is a name for the network.
-Please see `stage1_train.py` for additional training options, in particular if `--outf` is set, then predicted images in a minibatch
+Please see `stage1_gan.py` for additional training options, in particular if `--outf` is set, then predicted images in a minibatch
 are periodically written out to the specified directory.
 
 ### Translation GAN
@@ -82,7 +82,7 @@ are periodically written out to the specified directory.
 To train the opacity GAN, first go to the `gan` directory and run:
 
 ```
-python stage2_train.py --dataroot data_dir --checkpoint_dir checkpoint_dir --name name --opNet opNet.pth
+python stage2_gan.py --dataroot data_dir --checkpoint_dir checkpoint_dir --name name --opNet opNet.pth
 ```
 The parameters are mostly the same as above, except that `name` should be different from the one specified in the opacity GAN.
 The one exception is `opNet`, which takes the filename of the opacity GAN generator trained above.
