@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/matthewberger/tfgan/raw/master/images/teaser_img.jpg "Overview")
 
-[Matthew Berger](https://matthewberger.github.io/), Jixian Li, [Joshua A. Levine](https://jalevine.bitbucket.io/)
+[Matthew Berger](https://matthewberger.github.io/), [Jixian Li](https://jixianli.github.io/), [Joshua A. Levine](https://jalevine.bitbucket.io/)
 
 ([arxiv](https://arxiv.org/abs/1710.09545)) ([video](https://matthewberger.github.io/videos/tfgan.mp4)) ([DOI](http://dx.doi.org/10.1109/TVCG.2018.2816059))
 
